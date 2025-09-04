@@ -3,36 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeri Kita</title>
+  <title>Galeri Kita 📸</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="gallery-page">
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">💖 Kita</div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="gallery.html" class="active">Galeri</a></li>
       <li><a href="moments.html">Moments</a></li>
       <li><a href="about.html">Tentang Kita</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">☰</div>
+    <button id="dark-toggle">🌙</button>
   </nav>
 
-  <section class="gallery">
-    <h2>Galeri Kenangan 📸</h2>
+  <!-- Gallery Section -->
+  <section class="gallery reveal">
+    <h2 class="gradient-text">Galeri Kenangan 📸</h2>
     <div class="gallery-grid">
-      <div class="card">
-       <img src="images/foto1.jpeg" alt="Moment 1" class="gallery-img">
-<p>"Waktu bersamamu adalah definisi bahagia."</p>
-</div>
-<div class="card">
-  <img src="images/foto2.jpeg" alt="Moment 2" class="gallery-img">
-  <p>"Senyummu cukup untuk bikin dunia terasa indah."</p>
-</div>
-<div class="card">
-  <img src="images/foto3.jpeg" alt="Moment 3" class="gallery-img">
-  <p>"Bersamamu, aku tak pernah merasa sendiri."</p>
-</div>
+      <div class="glass-card reveal">
+        <img src="images/foto1.jpeg" alt="Moment 1" class="gallery-img">
+        <p>"Waktu bersamamu adalah definisi bahagia."</p>
+      </div>
+      <div class="glass-card reveal">
+        <img src="images/foto2.jpeg" alt="Moment 2" class="gallery-img">
+        <p>"Senyummu cukup untuk bikin dunia terasa indah."</p>
+      </div>
+      <div class="glass-card reveal">
+        <img src="images/foto3.jpeg" alt="Moment 3" class="gallery-img">
+        <p>"Bersamamu, aku tak pernah merasa sendiri."</p>
+      </div>
     </div>
   </section>
+
+  <!-- Modal Zoom -->
+  <div id="modal">
+    <span id="close">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <div id="caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kita Berdua | Dibuat dengan ❤️ oleh Dhino</p>
+    <div class="socials">
+      <a href="#">📸 Instagram</a>
+      <a href="#">💬 WhatsApp</a>
+      <a href="#">🐙 GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">⬆️</button>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

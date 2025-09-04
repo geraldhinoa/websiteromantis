@@ -5,46 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mimpi & Harapan 🌟</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="future-page">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">💖 Kita</div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="gallery.html">Galeri</a></li>
       <li><a href="moments.html">Moments</a></li>
       <li><a href="about.html">Tentang Kita</a></li>
       <li><a href="future.html" class="active">Harapan</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">☰</div>
     <button id="dark-toggle">🌙</button>
   </nav>
 
   <!-- Future Section -->
   <section class="future">
-    <h2>Mimpi & Harapan Kita 🌟</h2>
-    <p>Setiap pasangan punya impian. Inilah harapan kecil yang ingin kita capai bersama:</p>
+    <h2 class="gradient-text reveal">Mimpi & Harapan Kita 🌟</h2>
+    <p class="reveal">Setiap pasangan punya impian. Inilah harapan kecil yang ingin kita capai bersama:</p>
 
     <div class="future-cards">
-      <div class="future-card">
+      <div class="future-card glass-card reveal">
         <h3>🏡 Rumah Impian</h3>
         <p>Sebuah rumah sederhana yang penuh tawa dan cinta.</p>
       </div>
-      <div class="future-card">
+      <div class="future-card glass-card reveal">
         <h3>🌎 Liburan Dunia</h3>
         <p>Menjelajah tempat baru bersama, mengumpulkan kenangan indah.</p>
       </div>
-      <div class="future-card">
+      <div class="future-card glass-card reveal">
         <h3>💍 Janji Sehidup Semati</h3>
         <p>Saling berjanji untuk terus bersama hingga tua nanti.</p>
       </div>
     </div>
   </section>
 
+  <!-- Countdown Anniversary -->
+  <section class="countdown-section reveal">
+    <h2 class="gradient-text">Hitung Mundur Anniversary Kita 🎉</h2>
+    <div id="countdown" class="countdown-box glass-card"></div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <p>© 2025 Kita Berdua | Dibuat dengan ❤️ oleh Dhino</p>
+    <div class="socials">
+      <a href="#">📸 Instagram</a>
+      <a href="#">💬 WhatsApp</a>
+      <a href="#">🐙 GitHub</a>
+    </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">⬆️</button>
 
   <script src="js/script.js"></script>
 </body>

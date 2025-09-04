@@ -5,34 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak Kita 📩</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="contact-page">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">💖 Kita</div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="gallery.html">Galeri</a></li>
       <li><a href="moments.html">Moments</a></li>
       <li><a href="about.html">Tentang Kita</a></li>
       <li><a href="contact.html" class="active">Kontak</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">☰</div>
     <button id="dark-toggle">🌙</button>
   </nav>
 
   <!-- Contact Section -->
-  <section class="contact">
-    <h2>Hubungi Kita 📩</h2>
+  <section class="contact reveal">
+    <h2 class="gradient-text">Hubungi Kita 📩</h2>
     <p>Kalau rindu atau ingin berbagi cerita, bisa kirim pesan melalui form ini ya ❤️</p>
 
-    <form class="contact-form">
+    <form class="contact-form glass-card reveal">
       <input type="text" placeholder="Nama Kamu" required>
       <input type="email" placeholder="Email Kamu" required>
       <textarea rows="5" placeholder="Tulis pesanmu disini..." required></textarea>
       <button type="submit">Kirim Pesan 💌</button>
     </form>
 
-    <div class="socials">
+    <div class="socials reveal">
       <a href="#">📸 Instagram</a>
       <a href="#">💬 WhatsApp</a>
       <a href="#">🐙 GitHub</a>
@@ -43,6 +45,9 @@
   <footer>
     <p>© 2025 Kita Berdua | Dibuat dengan ❤️ oleh Dhino</p>
   </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">⬆️</button>
 
   <script src="js/script.js"></script>
 </body>

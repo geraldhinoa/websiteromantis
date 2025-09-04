@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tentang Kita 💖</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="about-page">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">💖 Kita</div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="gallery.html">Galeri</a></li>
       <li><a href="moments.html">Moments</a></li>
       <li><a href="about.html" class="active">Tentang Kita</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">☰</div>
     <button id="dark-toggle">🌙</button>
   </nav>
 
   <!-- Tentang Kita Section -->
-  <section class="about">
-    <h2>Tentang Kita 💕</h2>
+  <section class="about reveal">
+    <h2 class="gradient-text">Tentang Kita 💕</h2>
     <p>
       Website ini adalah persembahan kecil untuk perjalanan cinta kita.  
       Dari awal berkenalan, melewati suka duka, hingga sampai pada titik ini.  
@@ -29,17 +31,17 @@
     </p>
 
     <div class="about-cards">
-      <div class="about-card">
+      <div class="about-card glass-card reveal">
         <h3>✨ Awal Cerita</h3>
         <p>Kita bertemu secara sederhana, tapi sejak saat itu, hidupku terasa berbeda.  
            Dari sapaan kecil, tumbuhlah perasaan yang semakin kuat.</p>
       </div>
-      <div class="about-card">
+      <div class="about-card glass-card reveal">
         <h3>❤️ Tujuan Website Ini</h3>
         <p>Website ini dibuat bukan hanya untuk menampilkan foto,  
            tetapi untuk menyimpan cerita, kenangan, dan pesan yang akan selalu abadi.</p>
       </div>
-      <div class="about-card">
+      <div class="about-card glass-card reveal">
         <h3>🌱 Harapan</h3>
         <p>Aku berharap cinta ini terus tumbuh, makin kuat, dan suatu saat nanti kita bisa  
            melihat kembali halaman ini sambil tersenyum, mengingat semua perjuangan yang kita lalui.</p>
@@ -50,7 +52,15 @@
   <!-- Footer -->
   <footer>
     <p>© 2025 Kita Berdua | Dibuat dengan ❤️ oleh Dhino</p>
+    <div class="socials">
+      <a href="#">📸 Instagram</a>
+      <a href="#">💬 WhatsApp</a>
+      <a href="#">🐙 GitHub</a>
+    </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">⬆️</button>
 
   <script src="js/script.js"></script>
 </body>

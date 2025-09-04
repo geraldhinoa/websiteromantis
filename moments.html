@@ -5,46 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moments Kita ❤️</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="moments-page">
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">💖 Kita</div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="gallery.html">Galeri</a></li>
       <li><a href="moments.html" class="active">Moments</a></li>
       <li><a href="about.html">Tentang Kita</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">☰</div>
     <button id="dark-toggle">🌙</button>
   </nav>
 
+  <!-- Moments Section -->
   <section class="moments">
-    <h2>Moments Spesial Kita 📖</h2>
-    <div class="moment-card">
+    <h2 class="gradient-text reveal">Moments Spesial Kita 📖</h2>
+
+    <div class="moment-card glass-card reveal">
       <h3>✨ Pertemuan Pertama</h3>
       <p>Hari itu sederhana, tapi hatiku langsung tahu kalau ada yang berbeda. 
          Pertemuan pertama ini jadi awal dari segalanya.</p>
     </div>
-    <div class="moment-card">
+
+    <div class="moment-card glass-card reveal">
       <h3>❤️ First Date</h3>
       <p>Mungkin hanya makan sederhana, tapi tawa dan ceritamu membuatnya 
          jadi momen yang tidak akan kulupakan.</p>
     </div>
-    <div class="moment-card">
+
+    <div class="moment-card glass-card reveal">
       <h3>💌 Surat & Hadiah</h3>
       <p>Setiap kata yang kau tulis dan setiap hadiah kecil darimu, 
          menyimpan makna yang lebih besar dari sekadar benda.</p>
     </div>
-    <div class="moment-card">
+
+    <div class="moment-card glass-card reveal">
       <h3>🌎 Liburan Pertama</h3>
       <p>Melihat dunia bersamamu membuat segalanya terasa indah. 
          Liburan itu sederhana, tapi bagiku itu sempurna.</p>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Kita Berdua | Dibuat dengan ❤️ oleh Dhino</p>
+    <div class="socials">
+      <a href="#">📸 Instagram</a>
+      <a href="#">💬 WhatsApp</a>
+      <a href="#">🐙 GitHub</a>
+    </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">⬆️</button>
 
   <script src="js/script.js"></script>
 </body>

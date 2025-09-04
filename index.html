@@ -5,40 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kita Berdua 💕</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<body>
+<body class="index-page">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">💖 Kita</div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="gallery.html">Galeri</a></li>
       <li><a href="moments.html">Moments</a></li>
       <li><a href="about.html">Tentang Kita</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">☰</div>
     <button id="dark-toggle">🌙</button>
   </nav>
 
   <!-- Hero -->
   <header class="hero">
-    <h1>Selamat datang di cerita cinta kita 💕</h1>
+    <h1 class="gradient-text">Selamat datang di cerita cinta kita 💕</h1>
     <p>Website ini dibuat untuk mengenang perjalanan kita, penuh cerita indah, 
        tawa, dan doa untuk masa depan bersama.</p>
     <a href="gallery.html" class="btn-hero">Lihat Galeri 📸</a>
   </header>
 
   <!-- Pesan -->
-  <section class="pesan">
-    <h2>Pesan Untukmu 💌</h2>
-    <p>Setiap momen bersamamu adalah anugerah. Aku ingin website ini menjadi 
-       pengingat bahwa kita sudah berjalan sejauh ini, dan masih akan terus 
-       melangkah lebih jauh lagi. Mari kita jaga cinta ini, apa pun yang terjadi. ❤️</p>
+  <section class="pesan reveal">
+    <h2 class="gradient-text">Pesan Untukmu 💌</h2>
+    <div class="glass-card">
+      <p>Setiap momen bersamamu adalah anugerah. Aku ingin website ini menjadi 
+        pengingat bahwa kita sudah berjalan sejauh ini, dan masih akan terus 
+        melangkah lebih jauh lagi. Mari kita jaga cinta ini, apa pun yang terjadi. ❤️</p>
+    </div>
+  </section>
+
+  <!-- Countdown Anniversary -->
+  <section class="countdown reveal">
+    <h2 class="gradient-text">Menuju Anniversary Kita 🎉</h2>
+    <div id="countdown-timer"></div>
   </section>
 
   <!-- Quotes -->
-  <section id="quotes" class="quotes">
-    <h2>Quote Hari Ini ✨</h2>
+  <section id="quotes" class="quotes reveal">
+    <h2 class="gradient-text">Quote Hari Ini ✨</h2>
     <p id="random-quote"></p>
   </section>
 
@@ -51,6 +60,9 @@
       <a href="#">🐙 GitHub</a>
     </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">⬆️</button>
 
   <script src="js/script.js"></script>
 </body>

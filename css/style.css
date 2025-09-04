@@ -380,3 +380,203 @@ body.future-page { background: linear-gradient(135deg, #f7971e, #ffd200); } /* g
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* 🌈 Animasi background gradient */
+body {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #ff9a9e, #fad0c4);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌐 Navbar responsive */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+  }
+  .nav-links.active {
+    right: 10px;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ✨ Hover efek modern */
+.btn-hero, .about-card, .moment-card, .future-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-hero:hover,
+.about-card:hover,
+.moment-card:hover,
+.future-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* 🚀 Scroll to top */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff4d6d, #ff9a9e);
+  color: white;
+  cursor: pointer;
+  display: none;
+  z-index: 2000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#scrollTopBtn:hover {
+  transform: scale(1.1);
+}
+/* 🌈 Animasi background gradient */
+body {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #ff9a9e, #fad0c4);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ✨ Gradient Animated Text */
+.gradient-text {
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 6s ease infinite;
+}
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 💎 Glassmorphism Card */
+.glass-card, .moment-card, .about-card, .future-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover,
+.moment-card:hover,
+.about-card:hover,
+.future-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* 🚀 Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ⏳ Countdown */
+.countdown {
+  text-align: center;
+  padding: 50px 20px;
+}
+#countdown-timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* 🌐 Navbar responsive */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+  }
+  .nav-links.active {
+    right: 10px;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+/* 🚀 Scroll to top */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff4d6d, #ff9a9e);
+  color: white;
+  cursor: pointer;
+  display: none;
+  z-index: 2000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#scrollTopBtn:hover {
+  transform: scale(1.1);
+}
+/* 🔥 Upgrade Gradient Text biar lebih jelas */
+.gradient-text {
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 6s ease infinite;
+
+  /* 👇 tambahan biar lebih jelas */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* bayangan lembut */
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.25); /* outline tipis */
+}
